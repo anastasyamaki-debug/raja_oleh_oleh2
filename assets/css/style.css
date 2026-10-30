@@ -1,0 +1,637 @@
+{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffaf7;
+    color: #444;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    text-align: center;
+    padding: 20px 0;
+    background-color: white;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    background-color: #8b4513;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   ISI UTAMA
+========================= */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* =========================
+   JUDUL
+========================= */
+
+h1 {
+    text-align: center;
+    color: #8b4513;
+    margin: 30px 0 15px;
+}
+
+h2 {
+    color: #8b4513;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #8b4513;
+}
+
+/* =========================
+   GAMBAR HOME
+========================= */
+
+.hero {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: 350px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* =========================
+   TEKS
+========================= */
+
+p {
+    line-height: 1.7;
+}
+
+/* =========================
+   KATALOG PRODUK
+========================= */
+
+.produk-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: 0.3s;
+    padding-bottom: 20px;
+
+    card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.card h3 {
+    margin: 15px 10px 8px;
+    font-size: 20px;
+    color: #7b3f2a;
+}
+
+.card p {
+    margin: 6px 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+.card .harga {
+    font-size: 17px;
+    font-weight: bold;
+    color: #a0523d;
+}
+
+.card a,
+.card button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: #a0523d;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.card a:hover,
+.card button:hover {
+    background: #7b3f2a;
+}
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card h2 {
+    font-size: 20px;
+    color: #8b4513;
+    margin: 18px 10px 8px;
+}
+
+.card p {
+    margin: 8px 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.card p:nth-of-type(2) {
+    font-weight: bold;
+    color: #8b4513;
+    font-size: 17px;
+}
+
+.card a {
+    display: inline-block;
+    background-color: #8b4513;
+    color: white;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    background-color: #6f350f;
+}
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.card h3 {
+    margin: 15px 0 8px;
+}
+
+.card p {
+    margin: 8px 0;
+}
+
+/* =========================
+   TOMBOL
+========================= */
+
+.card button,
+.card a {
+    display: inline-block;
+    background-color: #8b4513;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.card button:hover,
+.card a:hover {
+    background-color: #6f350f;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* =========================
+   TAMPILAN HP
+========================= */
+
+@media (max-width: 768px) {
+
+    .produk-container {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .hero {
+        height: 250px;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+}
+
+    .tentang-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+
+.tentang-hero {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.tentang-hero h1 {
+    margin-bottom: 12px;
+}
+
+.tentang-hero p {
+    max-width: 700px;
+    margin: auto;
+    color: #6b5147;
+}
+
+.tentang-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.tentang-card h2 {
+    color: #8b451f;
+    margin-bottom: 15px;
+}
+
+.tentang-card p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.info-card h3 {
+    color: #8b451f;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 14px;
+}
+
+.keunggulan {
+    background-color: #f3e3d6;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.keunggulan h2 {
+    color: #8b451f;
+    margin-bottom: 25px;
+}
+
+.keunggulan-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.keunggulan-list div {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.keunggulan-list span {
+    color: #8b451f;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+@media (max-width: 700px) {
+    .info-container {
+        grid-template-columns: 1fr;
+    }
+
+    .keunggulan-list {
+        grid-template-columns: 1fr;
+    }
+
+    .tentang-page {
+        padding: 25px 15px;
+    }
+}
+    .kontak-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+
+.kontak-hero {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.kontak-hero h1 {
+    color: #8b451f;
+    margin-bottom: 12px;
+}
+
+.kontak-hero p {
+    max-width: 700px;
+    margin: auto;
+    color: #6b5147;
+}
+
+/* Dua bagian kontak */
+.kontak-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* Informasi toko */
+.kontak-info,
+.kontak-form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.kontak-info h2,
+.kontak-form h2 {
+    color: #8b451f;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Item informasi */
+.kontak-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 22px;
+    padding: 15px;
+    background: #fff8f2;
+    border-radius: 10px;
+}
+
+.kontak-item > span {
+    font-size: 28px;
+}
+
+.kontak-item h3 {
+    color: #8b451f;
+    margin-bottom: 5px;
+}
+
+.kontak-item p {
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Form */
+.kontak-form label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #5a392c;
+}
+
+.kontak-form input,
+.kontak-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d8c2b4;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.kontak-form input:focus,
+.kontak-form textarea:focus {
+    border-color: #8b451f;
+}
+
+.kontak-form textarea {
+    resize: vertical;
+}
+
+.kontak-form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    background-color: #8b451f;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.kontak-form button:hover {
+    background-color: #a85d2a;
+    transform: translateY(-2px);
+}
+
+/* Tampilan HP */
+@media (max-width: 700px) {
+    .kontak-container {
+        grid-template-columns: 1fr;
+    }
+
+    .kontak-page {
+        padding: 25px 15px;
+    }
+}
+
+  .hero {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Foto toko */
+.hero img {
+    width: 100%;
+    max-width: 1000px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+/* Judul */
+.hero h1 {
+    font-size: 34px;
+    color: #8b4513;
+    margin-bottom: 15px;
+}
+
+/* Deskripsi */
+.hero p {
+    font-size: 17px;
+    color: #666;
+    line-height: 1.7;
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+
+/* Tombol katalog */
+.hero a {
+    display: inline-block;
+    background: #8b4513;
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero a:hover {
+    background: #7b3f2a;
+    transform: translateY(-2px);
+}
+
+/* Tampilan layar kecil */
+@media (max-width: 768px) {
+    .hero {
+        margin-top: 20px;
+    }
+
+    .hero img {
+        height: 250px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+}
+
+  /* PERBAIKAN BERANDA */
+
+.hero {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.hero p {
+    text-align: center;
+    margin: 0 auto 25px;
+    max-width: 750px;
+}
+
+.hero a {
+    display: inline-block;
+    background: #8b4513;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero a:hover {
+    background: #7b3f2a;
+}
